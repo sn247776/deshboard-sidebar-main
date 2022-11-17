@@ -1,0 +1,92 @@
+
+.main-card{
+    background-color: white;
+    width: 25vw;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card-icon{
+    color: #422AFB;
+    padding: 5px 25px;
+    font-size: 35px;
+}
+
+.card-info p{
+    color:#A3AED0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-info h3{
+    color: #1B2559;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-nav{
+    display: flex;
+}
+.profile-nav p{
+    margin: 20px 0px;
+    margin-right: 50px;
+}
+
+.basic-info input{
+    padding: 8px;
+    width: 40vw;
+    margin: 5px 0px;
+    
+}
+
+.basic-info textarea{
+    width: 40vw;
+    padding: 8px;
+}
+
+.basic-info p{
+    font-weight: 600;
+}
+
+.basic-info button{
+    background-color: #190793;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    box-shadow: 1px 4px 0px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+.searchTerm {
+  border: none;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+ 
+}
+
+.searchTerm:focus{
+  border: none;
+}

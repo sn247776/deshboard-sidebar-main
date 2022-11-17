@@ -1,0 +1,64 @@
+.dash-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.chart-area{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.graph{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-icon{
+    display: flex;
+    background-color: #3B5998;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.g-icon{
+    display: flex;
+    background-color: #DD4B39;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.social-login{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    margin: 20px 0px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.social-login hr{
+    border: none;
+    border-top: 1px solid rgb(136, 136, 136);
+    width: 100%;
+    margin: 10px;
+}
+
+.profile{
+    padding: 50px;
+}
