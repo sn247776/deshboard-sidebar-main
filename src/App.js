@@ -4,12 +4,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard.jsx";
 import Profile from "./pages/Profile.jsx";
-import Analytics from "./pages/Analytics.jsx";
+import Franchise from "./pages/Franchise.jsx";
 import Comment from "./pages/Comment.jsx";
 import Product from "./pages/Product.jsx";
 import ProductList from "./pages/ProductList.jsx";
 import Login from "./pages/Login.jsx";
 import NavBar from "./components/NavBar";
+import NewFranchise from "./pages/NewFranchise";
 const App = () => {
   const user = localStorage.getItem("user");
 
@@ -24,7 +25,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/login" exact={true} element={<Login />} /> */}
+        <Route path="/login" exact={true} element={<Login />} />
         <Route
           path="/"
           element={
@@ -62,13 +63,24 @@ const App = () => {
           }
         />
         <Route
-          path="/analytics"
+          path="/franchise"
           element={
             <Sidebar>
-              <Analytics />
+              <Franchise />
             </Sidebar>
           }
         />
+
+        <Route
+          path="/franchise/new"
+          element={
+            <Sidebar>
+              <NavBar page="New Franchise" />
+              <NewFranchise />
+            </Sidebar>
+          }
+        />
+
         <Route
           path="/product"
           element={

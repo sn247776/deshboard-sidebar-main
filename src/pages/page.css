@@ -17,6 +17,12 @@
     margin: 0px 10px;
 }
 
+.graph-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    border-radius: 20px;
+}
+
 .social-media{
     display: flex;
     justify-content: center;
@@ -61,4 +67,9 @@
 
 .profile{
     padding: 50px;
+}
+
+.tabsactive-tabs{
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--main-color);
 }

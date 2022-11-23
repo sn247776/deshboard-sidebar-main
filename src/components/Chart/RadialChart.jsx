@@ -5,8 +5,9 @@ class BarChart extends React.Component {
     super(props);
 
     this.state = {
-      series: [44, 0, 0],
+      series: [44, 20, 80],
       options: {
+        colors: ["#501F3A", "#CB2D6F", "#14A098"],
         chart: {
           type: "radialBar",
           height: 350,

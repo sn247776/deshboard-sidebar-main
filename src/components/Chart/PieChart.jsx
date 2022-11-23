@@ -7,6 +7,7 @@ class PopChart extends React.Component {
     this.state = {
       series: [44, 55, 41, 17, 15],
       options: {
+        colors: ["#501F3A", "#CB2D6F", "#14A098"],
         chart: {
           type: "donut",
         },

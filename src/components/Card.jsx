@@ -1,6 +1,6 @@
 import React from "react";
 import "./components.css";
-import { FiBarChart2 } from "react-icons/fi";
+
 import Paper from "@mui/material/Paper";
 
 function Card(props) {

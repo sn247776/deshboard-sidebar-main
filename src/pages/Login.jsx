@@ -16,6 +16,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import { useNavigate } from "react-router-dom";
+import { alpha, styled } from "@mui/material/styles";
+import { pink } from "@mui/material/colors";
 
 const theme = createTheme();
 export default function SignIn() {
@@ -34,6 +36,34 @@ export default function SignIn() {
       password: data.get("password"),
     });
   };
+
+  const CssTextField = styled(TextField)({
+    "& label.Mui-focused": {
+      color: "#CB2D6F",
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "#CB2D6F",
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "#501F3A",
+      },
+      "&:hover fieldset": {
+        borderColor: "#14A098",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "#CB2D6F",
+      },
+    },
+  });
+
+  const ColorButton = styled(Button)(({ theme }) => ({
+    color: theme.palette.getContrastText("#501F3A"),
+    backgroundColor: "#501F3A",
+    "&:hover": {
+      backgroundColor: "#CB2D6F",
+    },
+  }));
 
   return (
     <ThemeProvider theme={theme}>
@@ -59,7 +89,7 @@ export default function SignIn() {
             noValidate
             sx={{ mt: 1 }}
           >
-            <TextField
+            <CssTextField
               margin="normal"
               required
               fullWidth
@@ -69,7 +99,7 @@ export default function SignIn() {
               autoComplete="email"
               autoFocus
             />
-            <TextField
+            <CssTextField
               margin="normal"
               required
               fullWidth
@@ -80,31 +110,54 @@ export default function SignIn() {
               autoComplete="current-password"
             />
             <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
+              control={
+                <Checkbox
+                  value="remember"
+                  sx={{
+                    color: "#501F3A",
+                    "&.Mui-checked": {
+                      color: "#501F3A",
+                    },
+                  }}
+                />
+              }
               label="Remember me"
             />
-            <Button
+            <ColorButton
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
               Sign In
-            </Button>
+            </ColorButton>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link
+                  href="#"
+                  variant="body2"
+                  sx={{
+                    color: "#501F3A",
+                  }}
+                >
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/signup" variant="body2">
+                <Link
+                  href="/signup"
+                  variant="body2"
+                  sx={{
+                    color: "#501F3A",
+                  }}
+                >
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
+
         <div>
           <div className="social-login">
             <hr />

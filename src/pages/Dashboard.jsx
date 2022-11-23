@@ -42,6 +42,17 @@ const Dashboard = () => {
           </div>
         </Paper>
       </div>
+      <div>
+        <Paper className="graph-2">
+          <div></div>
+          <div>
+            <PieChart />
+          </div>
+          <div>
+            <RadialChart />
+          </div>
+        </Paper>
+      </div>
     </div>
   );
 };

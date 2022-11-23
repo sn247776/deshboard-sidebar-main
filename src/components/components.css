@@ -1,3 +1,10 @@
+*{
+  --main-color: #501F3A;
+  --main-hover: #CB2D6F;
+  --bg-color: #CCCCCC;
+  --secondary-color: #14A098;
+  --secondary-hover: #0F292F;
+}
 
 .main-card{
     background-color: white;
@@ -9,7 +16,7 @@
 }
 
 .card-icon{
-    color: #422AFB;
+    color: var(--main-color);
     padding: 5px 25px;
     font-size: 35px;
 }
@@ -21,7 +28,7 @@
 }
 
 .card-info h3{
-    color: #1B2559;
+    color: var(--secondary-hover);
     font-size: 24px;
     font-weight: 600;
 }
@@ -29,34 +36,64 @@
 .profile-nav{
     display: flex;
 }
-.profile-nav p{
+.profile-nav a{
+    font-weight: 800;
     margin: 20px 0px;
     margin-right: 50px;
+    cursor: pointer;
 }
 
+.basic-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 600;
+    padding: 10px;
+}
 .basic-info input{
     padding: 8px;
-    width: 40vw;
-    margin: 5px 0px;
-    
+    width: 90%;
+    margin: 5px 0px;    
 }
 
-.basic-info textarea{
-    width: 40vw;
-    padding: 8px;
+.basic-info h2{
+    margin: 20px 0px;
 }
 
 .basic-info p{
+    margin: 5px 0px;
+}
+.info-tab textarea{
+    width: 95%;
+    padding: 8px;
+}
+
+.info-tab{
     font-weight: 600;
 }
 
-.basic-info button{
-    background-color: #190793;
+.info-tab button{
+    background-color: var(--main-color);
     color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.info-tab button:hover{
+    background-color: var(--main-hover);
+}
+
+.basic-input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #505256;
+}
+
+.basic-input:focus{
+  border: none;
+  border-bottom: 2px solid var(--main-hover);
+  transition: 0.3s;
 }
 
 .nav-bar{
@@ -89,4 +126,48 @@
 
 .searchTerm:focus{
   border: none;
+}
+
+.sidebar{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 200px;
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+.logo{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #6a6c6d;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background: var(--main-color);
+    color: white;
+    transition: all 0.5s;
+}
+.active{
+    background: var(--main-color);
+    color: white;
+}
+
+
+.icon, .link_text{
+    font-size: 18px;
+    margin: 5px 0px;
+    font-weight: 600;
 }

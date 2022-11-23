@@ -16,6 +16,7 @@ class PopChart extends React.Component {
         },
       ],
       options: {
+        colors: ["#501F3A", "#CB2D6F", "#14A098"],
         chart: {
           height: 350,
           type: "area",
