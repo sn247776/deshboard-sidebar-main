@@ -55,7 +55,7 @@ function BasicInfo() {
           placeholder="03 My Area Name Nearby Mumbai"
         ></textarea>
         <div>
-          <button>Save Changes</button>
+          <button className="main-btn">Save Changes</button>
         </div>
       </div>
     </div>

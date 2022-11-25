@@ -29,29 +29,60 @@ const App = () => {
         <Route
           path="/"
           element={
-            <Sidebar>
-              <NavBar page="Main Dashboard" />
-              <Dashboard />
-            </Sidebar>
+            <div className="dashboard-layout">
+              <div className="side-main">
+                <div className="sticky-side">
+                  <Sidebar />
+                </div>
+              </div>
+              <div>
+                <div className="sticky-nav">
+                  <NavBar page="Main Dashboard" />
+                </div>
+                <div>
+                  <Dashboard />
+                </div>
+              </div>
+            </div>
           }
         />
         <Route
           exact={true}
           path="/dashboard"
           element={
-            <Sidebar>
-              <NavBar page="Main Dashboard" />
-              <Dashboard />
-            </Sidebar>
+            <div className="dashboard-layout">
+              <div className="side-main">
+                <div className="sticky-side">
+                  <Sidebar />
+                </div>
+              </div>
+              <div>
+                <div className="sticky-nav">
+                  <NavBar page="Main Dashboard" />
+                </div>
+                <div>
+                  <Dashboard />
+                </div>
+              </div>
+            </div>
           }
         />
         <Route
           path="/profile"
           element={
-            <Sidebar>
-              <NavBar page="Profile" />
-              <Profile />
-            </Sidebar>
+            <div className="dashboard-layout">
+              <div className="side-main">
+                <div className="sticky-side">
+                  <Sidebar />
+                </div>
+              </div>
+              <div>
+                <div className="sticky-nav">
+                  <NavBar page="Profile" />
+                </div>
+                <Profile />
+              </div>
+            </div>
           }
         />
         <Route
@@ -74,10 +105,19 @@ const App = () => {
         <Route
           path="/franchise/new"
           element={
-            <Sidebar>
-              <NavBar page="New Franchise" />
-              <NewFranchise />
-            </Sidebar>
+            <div className="dashboard-layout">
+              <div className="side-main">
+                <div className="sticky-side">
+                  <Sidebar />
+                </div>
+              </div>
+              <div>
+                <div className="sticky-nav">
+                  <NavBar page="New Franchise" />
+                </div>
+                <NewFranchise />
+              </div>
+            </div>
           }
         />
 

@@ -17,7 +17,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import { useNavigate } from "react-router-dom";
 import { alpha, styled } from "@mui/material/styles";
-import { pink } from "@mui/material/colors";
 
 const theme = createTheme();
 export default function SignIn() {
@@ -77,7 +76,7 @@ export default function SignIn() {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+          <Avatar sx={{ m: 1, bgcolor: "#501F3A" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">

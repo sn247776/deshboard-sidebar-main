@@ -3,6 +3,9 @@ import React from "react";
 import { BiSearch } from "react-icons/bi";
 import Badge from "@mui/material/Badge";
 import MailIcon from "@mui/icons-material/Mail";
+
+import MenuItem from "./MenuItem";
+
 function NavBar(props) {
   return (
     <div className="nav-bar">
@@ -17,6 +20,9 @@ function NavBar(props) {
           <Badge badgeContent={4} color="primary">
             <MailIcon color="action" />
           </Badge>
+          <div>
+            <MenuItem />
+          </div>
         </div>
       </div>
     </div>

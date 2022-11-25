@@ -13,29 +13,27 @@ function Profile() {
 
   return (
     <div>
-      <div className="main-profile">
-        <Paper elevation={1}>
-          <div className="profile">
-            <div className="profile-nav">
-              <a
-                className={toggleState === true ? "tabsactive-tabs" : null}
-                onClick={() => {
-                  toggleTab(true);
-                }}
-              >
-                Personal Details
-              </a>
-              <a
-                className={toggleState === false ? "tabsactive-tabs" : null}
-                onClick={() => {
-                  toggleTab(false);
-                }}
-              >
-                Change Password
-              </a>
-            </div>
-            {toggleState ? <BasicInfo /> : <PasswordChange />}
+      <div className="profile">
+        <Paper elevation={1} className="profile">
+          <div className="profile-nav">
+            <a
+              className={toggleState === true ? "tabsactive-tabs" : null}
+              onClick={() => {
+                toggleTab(true);
+              }}
+            >
+              Personal Details
+            </a>
+            <a
+              className={toggleState === false ? "tabsactive-tabs" : null}
+              onClick={() => {
+                toggleTab(false);
+              }}
+            >
+              Change Password
+            </a>
           </div>
+          {toggleState ? <BasicInfo /> : <PasswordChange />}
         </Paper>
       </div>
     </div>

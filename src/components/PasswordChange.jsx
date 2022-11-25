@@ -21,7 +21,7 @@ function PasswordChange() {
         </div>
       </div>
       <div className="info-tab">
-        <button>Save Changes</button>
+        <button className="main-btn">Save Changes</button>
       </div>
     </div>
   );

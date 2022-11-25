@@ -1,5 +1,6 @@
 import { Paper } from "@mui/material";
 import React from "react";
+import CheckboxesTags from "../components/Checkbox";
 
 function NewFranchise() {
   return (
@@ -52,7 +53,10 @@ function NewFranchise() {
           </div>
           <div>
             <h2>Education</h2>
-            <input className="basic-input" />
+            <CheckboxesTags />
+          </div>
+          <div>
+            <button className="main-btn">Save Changes</button>
           </div>
         </div>
       </div>
